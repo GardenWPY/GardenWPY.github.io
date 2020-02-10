@@ -1,0 +1,187 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    
+<meta charset="utf-8" >
+
+<title>远航1.36-事件之间的关系 &amp; 阶段性小目标 | 故事远航</title>
+<meta name="description" content="阿花的故事星际探索之旅">
+
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="shortcut icon" href="https://GardenWPY.github.io//favicon.ico?v=1581307549268">
+<link rel="stylesheet" href="https://GardenWPY.github.io//styles/main.css">
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+
+
+
+  </head>
+  <body>
+    <div id="app" class="main">
+      <div class="site-header-container">
+  <div class="site-header">
+    <div class="left">
+      <a href="https://GardenWPY.github.io/">
+        <img class="avatar" src="https://GardenWPY.github.io//images/avatar.png?v=1581307549268" alt="" width="32px" height="32px">
+      </a>
+      <a href="https://GardenWPY.github.io/">
+        <h1 class="site-title">故事远航</h1>
+      </a>
+    </div>
+    <div class="right">
+      <transition name="fade">
+        <i class="icon" :class="{ 'icon-close-outline': menuVisible, 'icon-menu-outline': !menuVisible }" @click="menuVisible = !menuVisible"></i>
+      </transition>
+    </div>
+  </div>
+</div>
+
+<transition name="fade">
+  <div class="menu-container" style="display: none;" v-show="menuVisible">
+    <div class="menu-list">
+      
+        
+          <a href="/" class="menu purple-link">
+            首页
+          </a>
+        
+      
+        
+          <a href="/archives" class="menu purple-link">
+            归档
+          </a>
+        
+      
+        
+          <a href="/tags" class="menu purple-link">
+            标签
+          </a>
+        
+      
+        
+          <a href="/post/about" class="menu purple-link">
+            关于
+          </a>
+        
+      
+    </div>
+  </div>
+</transition>
+
+
+      <div class="content-container">
+        <div class="post-detail">
+          
+            <div class="feature-container" style="background-image: url('https://GardenWPY.github.io//post-images/tlwBdQGNZ.jpg')">
+            </div>
+          
+          <h2 class="post-title">远航1.36-事件之间的关系 &amp; 阶段性小目标</h2>
+          <div class="post-info post-detail-info">
+            <span><i class="icon-calendar-outline"></i> 2020-02-10</span>
+            
+              <span>
+                <i class="icon-pricetags-outline"></i>
+                
+                  <a href="https://GardenWPY.github.io//tag/tgCnuL3ZA">
+                    工具
+                    
+                  </a>
+                
+              </span>
+            
+          </div>
+          <div class="post-content">
+            <p>这周在尝试写老五part二的细纲，在写的时候，没有想象的顺利，结果有三条线并列了，怎么看怎么觉得别扭。</p>
+<p>这三条线在内容上并不相关，是不可能一直同步发生的，不可能如此契合穿插。</p>
+<p>于是将三条线上的内容细化、设想出具体的场景后，就知道，该有怎么样的先后顺序了。</p>
+<p>为此，需要给N靶法的使用，打一下补丁，具体分析一下不同线索之间，事件的关系。</p>
+<p>这里拿《末路狂花》作为举例。</p>
+<p>其一，串联</p>
+<p>这里有两种情况。</p>
+<p>①是首尾串联，事件的发生，有其因果关系，因为A所以B，因为B所以C。</p>
+<p>影片《末路狂花》当中，因为塞尔玛和路易斯相约出去玩，所以开车上路。因为路长，所以途径酒吧坐下来暂时放松。因为在酒吧放松，所以碰见了哈伦……</p>
+<p>②是分支结构。主线发展到某个事件之后，分支出其他线。分支出来的线，有各自的因果。它们彼此影响。</p>
+<p>片中，主线仍然是塞尔玛和路易斯的逃亡之旅，而路易斯这边，分支出来，联系了吉米（分支线索a）；塞尔玛那边，分支出来，跟JD对上了眼（分支线索b）。以及后面警长哈尔出现（分支线索c）。卡车司机出现（分支线索d）。</p>
+<p>分支线索之间，以及分支线索跟主线之间，相互影响。那么，它们如何彼此影响呢？又是怎样安排的叙述顺序呢？可以是嵌套，可以是并联。</p>
+<p>其二，嵌套。</p>
+<p>一个长篇故事里发生的种种事件，都可以视作为，嵌套在整个故事里。有一种特别实用的嵌套，叫做“后入先出”。</p>
+<p>后入先出，可以是在一件事发展到困局的时候，插入另外一件事，带来转机。</p>
+<p>在“靶心人”公式里，通常是在“意外”这一步插入新的事件。</p>
+<p>比如，在JD将放在塞尔玛那里的钱拿走之后，主线陷入了困局，她们的逃亡之旅遭受了灭顶之灾，没钱了，没办法买汽油和补给，逃不走了。</p>
+<p>这个时候，嵌入的事件是，塞尔玛跑去抢劫的商店，飞奔回来叫路易斯快点开车（设为事件b66）。</p>
+<p>事件b66是分支线索b的后续。而对主线来说，事件b66同时是“意外”，给主线带来了“转弯”，主线在这一阶段的结局就是，她们又有钱了，继续上路了。</p>
+<p>其三，并联。</p>
+<p>并联，是两条线相互交错。两条线可以互相影响；也可以互不相关，只是作为一种对比呼应。</p>
+<p>在《肖申克的救赎》里，安迪的线和瑞德的线，直到第24分钟才开始交错。在《冰与火之歌》里，是狼家的五个孩子各自的命运起伏。</p>
+<p>特殊例子，甚至可以在短时间内让场景密集穿插，花开两朵，各表一枝。比如《末路狂花》当中，路易斯和塞尔玛两个人，旅店的两个房间，穿插并行。塞尔玛跟JD是玩得高兴，路易斯和吉米是艰难诀别。</p>
+<p>就目前的实践尝试来看，两条线就已经非常够了，三条线会乱。不动声色地铺垫其他线索所需要的信息，可以。不要一直在两条以上的线索当中跳来跳去，认知负荷大。</p>
+<p>设立阶段性目标，是一个好办法，不论是日常生活，还是故事写作。二者有一个共同点，就是仿佛漫无边际。</p>
+<p>就像给故事设立了中点、第一情节点、第二情节点之类，近两天看到的干货里说“三章解决一个小冲突，十章一个大进展”。这样明确的一个一个的小目标，就像反馈一样，让人知道时刻检查自己，不要偏离轨道。</p>
+<p>人为添加一些节点，就像给万米长跑标注了一个个里程碑，心中有底，才能跑得踏实。最可怕的毕竟是未知。</p>
+<p>如果要跟“事件之间的关系”有所联系，大概是，在阶段性里程碑的节点上，需要搞一个相对“大”的事，让读者感到进展。</p>
+<p>今天偶然听到陈秋平编剧讲座，里面提到“事件的”🍋🍋🍋未完。</p>
+<p>远航随笔</p>
+<p>远航员阿花</p>
+<p></p>
+
+          </div>
+        </div>
+
+        
+          <div class="next-post">
+            <a class="purple-link" href="https://GardenWPY.github.io//post/7IlPdpEVX">
+              <h3 class="post-title">
+                下一篇：拉片6《三块广告牌》d
+              </h3>
+            </a>
+          </div>
+          
+      </div>
+
+      
+
+      <div class="site-footer">
+  <div class="slogan">阿花的故事星际探索之旅</div>
+  <div class="social-container">
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </div>
+  Powered by <a href="https://github.com/getgridea/gridea" target="_blank">Gridea</a>
+</div>
+
+
+    </div>
+    <script type="application/javascript">
+
+hljs.initHighlightingOnLoad()
+
+var app = new Vue({
+  el: '#app',
+  data: {
+    menuVisible: false,
+  },
+})
+
+</script>
+
+
+
+
+  </body>
+</html>
